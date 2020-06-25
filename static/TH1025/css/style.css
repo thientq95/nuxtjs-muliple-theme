@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,500,700&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* font-family: 'Roboto Condensed', sans-serif; */
+img	{
+	max-width: 100%;
+	height: auto;
+	transition: ease .5s all;
+    object-fit: cover
+}
+
+a,a:hover {
+	text-decoration: none;
+	transition: ease 0.3s all;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+/* Main */
+
+.wrapper {
+	background-color: #fff;
+}
+
+.box {
+	margin-bottom: 10px;
+}
+
+.img-news {
+	overflow: hidden;
+}
+
+.img-news img {
+	width: 100%;
+	object-fit: cover
+}
+
+.img-news:hover img {
+	transform: scale(1.2);
+}
+
+.header-top {
+	background-color: #4c68ef;
+	padding: 5px 0;
+	position: relative;
+}
+
+.logo {
+	padding: 10px 0;
+}
+
+.header-top .time {
+	color: #fff
+}
+
+.header-top .language {
+	text-align: right
+}
+
+.search-main {
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+
+.search-main a {
+	display: block;
+	background-color: #ffdd00;
+	padding: 8px 12px;
+	color: #333333;
+	font-size: 12px;
+	text-transform: uppercase;
+	border-radius: 4px;
+	width: 100px;
+	text-align: center
+}
+
+.search-main .input-search{
+	position: absolute;
+    top: 0px;
+    right: 90%;
+    border: 1px solid #fd0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 5px 12px;
+    width: 0;
+    opacity: 0;
+}
+
+.search-main .input-search.open {
+	width: 200px;
+    opacity: 1;
+}    
+
+.title-danhmuc {
+	height: 40px;
+	position: relative;
+	background: url('../images/bg-stripes.png');
+	margin-bottom: 15px;
+}
+
+.title-danhmuc .title {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: inline-block;
+	height: 100%;
+	line-height: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background: #4c68ef;
+}
+
+.title-danhmuc .title .view-all {
+	color: #fff;
+	margin-left: 10px;
+}
+
+.footer {
+	background-color: #3c52bf;
+	position: relative
+}
+
+.footer-link {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: url('../images/bg-ft.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+	color: #fff;
+}
+
+.footer-link:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(76, 104, 239, 0.8);
+}
+
+.footer-link .title {
+	margin-bottom: 20px;
+	font-size: 16px;
+	text-transform: uppercase
+}
+
+.footer-link ul {
+	list-style-type: none;
+}
+
+.footer-link ul li {
+	padding: 5px 0;
+}
+
+.footer-link ul li a {
+	color: #fff;
+}
+
+.footer-info {
+	padding: 25px 0;
+	color: #fff;
+}
+
+.footer-info .logo-ft {
+	display: inline-block;
+	width: 123px;
+	height: auto;
+	float: left;
+
+}
+
+.footer-info .location {
+	margin-left: 133px;
+	margin-top: 10px;
+}
+
+.social {
+	list-style-type: none;
+	text-align: right;
+	margin: 0;
+}
+
+.social li {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.social li a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.copyright {
+	border-top: 1px solid #4c68ef;
+	padding: 10px 0;
+	color: #fff;
+}
+
+.thongke {
+	list-style-type: none;
+	text-align: right;
+	margin: 0;
+}
+
+.thongke li{
+	display: block;
+	padding-left: 15px;
+}
+
+.menu-categories ul{
+	list-style: none
+}
+
+.menu-categories ul li {
+	height: 40px;
+	line-height: 40px;
+	background-color: #f0f0f0;
+	margin-bottom: 5px;
+	padding: 0 20px
+}
+
+.menu-categories ul li a {
+	color: #333;
+}
+
+
+.menu-categories ul li:hover {
+    background: #f1602a;
+}
+
+.menu-categories ul li:hover a {
+	color: #fff;
+}
+
+.menu-categories ul li.head-menu {
+	background-color: #ffdd00;
+}
+
+.menu-categories ul li.head-menu h3{
+	font-size: 16px;
+	line-height: 40px;
+	text-transform: uppercase
+}
+
+/* End Main */
+
+/* Slide Show */
+
+.slide-show img {
+	width: 100%;
+	max-height: 400px;
+	object-fit: cover
+}
+
+/* End Slide Show */
+
+/* Box News */
+
+.box-news .img-news {
+    margin-bottom: 10px;
+}
+
+.box-news .title-link {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	font-weight: 700;
+	color: #182a7e;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.box-news .title-link:hover,
+.title-link:hover {
+	color: #4c68ef !important;
+	transition: ease all 0.3s;
+	text-decoration: none
+}
+
+.box-news .date {
+	font-family: Arial;
+    display: block;
+    font-size: 12px;
+    color: #555;
+}
+
+.box-news ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    list-style-image: url('../images/list-home.png');
+}
+
+.box-news ul .title-link {
+	font-size: 14px;
+	font-weight: 500;
+	height: 38px;
+	overflow: hidden
+}
+
+/* End Box News */
+
+/* Tuyen Sinh */
+
+.tuyensinh {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.tuyensinh .img-news img {
+	max-height: 150px;
+}
+
+/* End Tuyen Sinh */
+
+/* Menu Egov */
+
+.menu-egov {
+	background: url('../images/bg-stripes.png');
+	padding-top: 30px;
+}
+
+.menu-tienich {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menu-tienich .item {
+	background-color: #f6f6f6;
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    padding: 10px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+}
+
+.menu-tienich .item:hover {
+    background-color: #ffdd00;
+}
+
+.menu-tienich .item img,
+.menu-tienich .item a {
+	display: block;
+	margin: auto;
+}
+
+.menu-tienich .item a {
+	font-size: 12px;
+	color: #333;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+}
+
+.menu-tienich .item:hover a {
+	color: #fff;
+}
+
+/* End */
+
+/* Thong Bao */
+.thongbao-container {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.thongbao .title-danhmuc .title {
+	background-color: #fe2a0c;
+}
+
+.thongbao ul {
+	list-style: none
+}
+
+.thongbao ul li a {
+	color: #182a7e;
+	font-size: 14px;
+	font-weight: 700;
+	display: block;
+	max-height: 60px;
+	overflow: hidden ;
+	margin-bottom: 10px;
+}
+
+.thongbao ul .date {
+    display: inline-block;
+    font-size: 12px;
+    color: #f1602a;
+    padding: 2px 4px;
+    border:  1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+/* End Thong Bao */
+
+/* Tin Noi Bat */
+
+.tin-noibat .item {
+	margin-bottom: 30px;
+}
+
+.tin-noibat .img-news img {
+	height: 150px;
+}
+
+.tin-noibat .title-link {
+	height: 44px;
+	overflow: hidden;
+}
+
+/* End */
+
+/* Hoat Dong - Gallery */
+
+.hoatdong-thuvienanh {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.hoatdong-thuvienanh .img-news img {
+    max-height: 200px;
+}
+
+.huongnghiep .title-danhmuc .title {
+	background-color: #353bb9;
+}
+
+.hoptacquocte .title-danhmuc .title {
+	background-color: #1ab1c6;
+}
+
+.hoatdongsinhvien .title-danhmuc .title {
+	background-color: #4ed840;
+}
+
+.gallery .title-danhmuc .title {
+	background-color: #f1602a;
+}
+
+.gallery #lightgallery{
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.gallery a{
+	display: block;
+	width: 50%;
+	float: left;
+	padding: 10px;
+}
+
+    .gallery a img {
+        height: 120px;
+    }
+    /* End */
+    /* Link Brand */
+    .link-brand {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+/* End */
+
+.breadcrumb {
+	margin: 10px 0;
+}
+
+.breadcrumb a {
+	color: #4c68ef;
+}
+
+.pagination {
+	padding-left: 0 !important;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #3c51bf;
+    border-color: #3c51bf;
+}
+
+.list-news .item {
+	margin-bottom: 15px;
+}
+
+.list-news .item img {
+	display: block;
+	width: 250px;
+	float: left;
+}
+
+.list-news .item .txt {
+	width: calc(100% - 250px);
+	padding-left: 15px;
+	float: left;
+}
+
+.form-contact {
+	background-color: #f5f5f5;
+	padding: 20px;
+}
+
+.form-horizontal .control-label {
+    font-weight: 500;
+    text-align: left !important;
+}
+
+.form-contact .form-control {
+	box-shadow: none;
+	height: 40px;
+}
+
+.form-control:focus {
+	border-color: #1ab1c6;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-contact .btn-submit {
+	background-color: #4c68ef;
+	color: #fff;
+	min-width: 120px;
+}
+
+.detail-news .title {
+	font-size: 28px;
+	color: #4c68ef;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.detail-news .desc {
+	color: #333;
+	font-weight: 600;
+}
+
+.page-gallery li {
+	margin-bottom: 30px;
+}
+
+.page-gallery .title-link {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-gallery li a {
+	text-decoration: none;
+	display: block;
+	padding: 5px;
+	box-shadow: 0px 2px 9px rgba(0,0,0,0.2);
+}
+
+    .page-gallery li a img {
+        height: 180px;
+        width: 100%;
+    }
+
+    .page-gallery .gallery-title {
+        margin-top: 10px;
+    }
+
+.page-gallery > a > img {
+    -webkit-transition: -webkit-transform 0.15s ease 0s;
+    -moz-transition: -moz-transform 0.15s ease 0s;
+    -o-transition: -o-transform 0.15s ease 0s;
+    transition: transform 0.15s ease 0s;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+	.box-news .item {
+		margin-bottom: 30px;
+	}
+
+	.tuyensinh .img-news img,
+	.tin-noibat .img-news img {
+	    max-height: 250px;
+	    height: auto
+	}
+
+	.footer-link .col-xs-12 {
+		margin-bottom: 30px;
+	}
+
+	.search-main {
+	    left: 0;
+	}
+
+	.search-main .input-search {
+	    left: 90px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+  	.copyright .col-xs-6 {
+	    width: 100%;
+	}
+	.copyright ul {
+	    text-align: left;
+	}
+	.copyright ul li {
+		padding-left: 0;
+	    padding-right: 15px;
+	}
+
+	.thongke {
+	    list-style-type: none;
+	    text-align: left;
+	   	margin-top: 30px
+	}
+
+	.list-news .item img {
+	    width: 100%;
+	    float: unset;
+	}
+
+	.list-news .item .txt {
+	    width: 100%;
+	    padding-left: 0;
+	    float: unset;
+	    margin-top: 15px;
+	}
+}

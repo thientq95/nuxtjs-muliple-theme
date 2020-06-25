@@ -1,0 +1,715 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-weight: 400
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    outline: 0;
+}
+
+.header-top {
+    text-align: center;
+    background: #01a859;
+}
+
+.section-title {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+    .section-title h3 {
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 700;
+        font-size: 22px;
+        position: relative;
+        margin-top: 0;
+        display: inline-block;
+        padding: 10px 15px;
+    }
+
+        .section-title h3::after, .section-title h3::before {
+            position: absolute;
+            content: '';
+            width: 10px;
+            height: 10px;
+        }
+
+        .section-title h3::before {
+            content: "";
+            border-bottom: 3px solid #c9090b;
+            border-left: 3px solid #c9090b;
+            bottom: 0;
+            left: 0;
+        }
+
+        .section-title h3::after {
+            content: "";
+            border-right: 3px solid #c9090b;
+            border-top: 3px solid #c9090b;
+            top: 0;
+            right: 0;
+        }
+
+.slideshow img {
+    width: 100%;
+}
+
+.tin-tuc-su-kien {
+    padding: 50px 0;
+}
+
+    .tin-tuc-su-kien .tin-tuc .item {
+        position: relative;
+        margin-bottom: 14px;
+    }
+
+
+        .tin-tuc-su-kien .tin-tuc .item .image {
+            overflow: hidden;
+        }
+
+    .tin-tuc-su-kien .tin-tuc .col-md-8 {
+        padding-right: 7px;
+    }
+
+        .tin-tuc-su-kien .tin-tuc .col-md-8 .row .col-md-6:nth-child(1) {
+            padding-right: 7px;
+        }
+
+        .tin-tuc-su-kien .tin-tuc .col-md-8 .row .col-md-6:nth-child(2) {
+            padding-left: 7px;
+        }
+
+    .tin-tuc-su-kien .tin-tuc .col-md-4 {
+        padding-left: 7px;
+    }
+
+    .tin-tuc-su-kien .tin-tuc .item:hover .image img {
+        transition: .8s;
+        transform: scale(1.2);
+    }
+
+    .tin-tuc-su-kien .tin-tuc .single-tin-tuc .item .image img {
+        height: 354px;
+    }
+
+    .tin-tuc-su-kien .tin-tuc .item .image img {
+        height: 170px;
+        width: 100%;
+        transition: .8s
+    }
+
+    .tin-tuc-su-kien .tin-tuc .txt {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 7px;
+        background-image: linear-gradient(to top, #000, #fff0);
+    }
+
+        .tin-tuc-su-kien .tin-tuc .txt .categories {
+            font-size: 12px;
+            background: #c9090b;
+            border-radius: 3px;
+            color: #fff;
+            display: inline-block;
+            padding: 5px 10px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .tin-tuc-su-kien .tin-tuc .txt p {
+            margin-bottom: 0;
+            color: #fff;
+            height: 40px;
+            overflow: hidden;
+        }
+
+    .tin-tuc-su-kien .su-kien .item {
+        overflow: hidden;
+        height: 95px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        position: relative;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+        .tin-tuc-su-kien .su-kien .item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+    .tin-tuc-su-kien .su-kien .date {
+        width: 80px;
+        height: 100%;
+        float: left;
+        color: #fff;
+        border-radius: 3px;
+        background: #01a859;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+        .tin-tuc-su-kien .su-kien .date .ngay {
+            font-size: 30px;
+        }
+
+        .tin-tuc-su-kien .su-kien .date .thang {
+            font-size: 15px;
+        }
+
+    .tin-tuc-su-kien .su-kien .txt {
+        width: calc( 100% - 80px);
+        float: left;
+        height: 100%;
+        font-weight: 500;
+        padding: 5px 10px;
+    }
+
+        .tin-tuc-su-kien .su-kien .txt a {
+            height: 58px;
+            overflow: hidden;
+            display: block;
+        }
+
+.menu-thongtin {
+    background: url(../images/bg-menu-tt.png) no-repeat center;
+    background-size: cover;
+}
+
+    .menu-thongtin .row {
+        display: flex;
+    }
+
+    .menu-thongtin .item {
+        padding: 15px;
+        height: 100%;
+        text-align: center;
+    }
+
+        .menu-thongtin .item .txt {
+            padding: 10px 0;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #111;
+        }
+
+        .menu-thongtin .item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #fff;
+            object-fit: scale-down;
+        }
+
+.tuyen-sinh {
+    padding: 110px 0;
+    position: relative;
+    min-height: 700px;
+    background-size: cover !important;
+    background: url(../images/bg-2.png)no-repeat center;
+}
+
+    .tuyen-sinh .content {
+        padding: 50px 0;
+    }
+
+    .tuyen-sinh .item {
+        overflow: hidden;
+        height: 85px;
+        background: rgba(255,255,255,0.4);
+        border-radius: 3px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    .tuyen-sinh .icon {
+        width: 65px;
+        height: 100%;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        position: absolute;
+        left: 15px;
+        top: 0;
+    }
+
+    .tuyen-sinh .txt {
+        margin-left: 80px;
+        height: 100%;
+        padding: 10px;
+    }
+
+        .tuyen-sinh .txt p {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 5px;
+            height: 44px;
+            overflow: hidden;
+        }
+
+.txt .date {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.tin-sinhvien {
+    padding: 50px 0;
+}
+
+    .tin-sinhvien .item-tintuc {
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+
+        .tin-sinhvien .item-tintuc .image {
+            width: 214px;
+            margin-right: 10px;
+            border-radius: 4px;
+            overflow: hidden;
+            float: left;
+        }
+
+.item-tintuc .image img {
+    height: 140px;
+    width: 100%;
+}
+
+.tin-sinhvien .item-tintuc .txt {
+    width: calc( 100% - 224px);
+    float: left;
+}
+
+.item-tintuc .txt h3 {
+    margin: 0 0 10px;
+    font-size: 15px;
+    font-weight: 700;
+    height: 34px;
+    overflow: hidden;
+}
+
+.item-tintuc .txt p {
+    height: 60px;
+    overflow: hidden;
+}
+
+.view-more {
+    text-align: center;
+    margin: 30px 0 0;
+}
+
+    .view-more a {
+        color: #00923f;
+        border: 1px solid #ddd;
+        padding: 8px 30px;
+        border-radius: 20px;
+        text-transform: uppercase;
+    }
+
+        .view-more a:hover {
+            transition: all 0.3s ease-in;
+            background: #01a859;
+            color: white;
+        }
+
+        .view-more a i {
+            margin-left: 5px;
+            font-size: 12px;
+        }
+
+.tin-hoatdong {
+    padding: 50px 0;
+    position: relative;
+}
+
+    .tin-hoatdong::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 120%;
+        top: 0;
+        transform: skewY(4deg);
+        background: #f7f6f5;
+    }
+
+    .tin-hoatdong .image {
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .tin-hoatdong .item-tintuc .txt h3 {
+        margin: 10px 0;
+    }
+
+.gallery .no-pd {
+    padding: 0
+}
+
+.gallery .item-gallery {
+    position: relative;
+    overflow: hidden;
+}
+
+    .gallery .item-gallery:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0, 0, 0, 0.2);
+    }
+
+    .gallery .item-gallery:hover:before {
+        background: rgb(0, 146, 63, 0.7);
+        transition: .3s
+    }
+
+    .gallery .item-gallery:hover .title {
+        opacity: 1;
+        transition: .3s all
+    }
+
+    .gallery .item-gallery img {
+        height: 350px;
+        width: 100%;
+        transition: 0.8s all;
+    }
+
+    .gallery .item-gallery .title {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: 0.3s all;
+    }
+
+.brand-image {
+    padding: 25px 0;
+    text-align: center;
+}
+
+    .brand-image img {
+        max-height: 59px
+    }
+
+.footer {
+    border-top: 2px solid #00923f;
+}
+
+    .footer .box-info {
+    }
+
+        .footer .box-info p {
+            line-height: 24px;
+        }
+
+    .footer .footer-top {
+        padding: 25px 0;
+    }
+
+    .footer .social {
+        text-align: right;
+        padding: 25px 0;
+    }
+
+        .footer .social strong {
+            font-size: 16px;
+            color: #00923f;
+            font-weight: normal;
+            display: inline-block;
+        }
+
+        .footer .social li {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .footer .social i.fa:hover {
+            color: #01a859
+        }
+
+        .footer .social i.fa {
+            font-size: 20px;
+            color: #bcbcbc
+        }
+
+    .footer .info {
+        background: #f6f6f6;
+        padding: 30px 0;
+    }
+
+        .footer .info .box-info h3 {
+            font-size: 18px;
+            color: #111;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        .footer .info .box-info li:first-child {
+            padding-top: 0
+        }
+
+        .footer .info .box-info li {
+            padding: 6px 0;
+            color: #333333;
+        }
+
+            .footer .info .box-info li:before {
+                content: "\f054";
+                font-family: FontAwesome;
+                font-size: 12px;
+                color: #01a859;
+            }
+
+    .footer .copyright {
+        background: #fff;
+        padding: 10px 0;
+        color: #111;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+.breadcrumbs {
+    padding: 20px 0;
+}
+
+    .breadcrumbs .breadcrumb {
+        margin: 0
+    }
+
+.news-detail {
+    padding: 10px 0;
+}
+
+    .news-detail .detail .title {
+        margin: 0;
+        font-size: 30px;
+    }
+
+    .news-detail .detail .time {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .news-detail .detail .desc {
+        font-weight: 700
+    }
+
+.list-news {
+    padding: 0;
+}
+
+    .list-news .item-tintuc .txt h3 {
+        max-height: 34px;
+        height: auto;
+    }
+
+.contact {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contact-form {
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 19px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    margin: 60px 0 40px 0;
+}
+
+    .contact-form p {
+        font-size: 14px;
+        text-align: center;
+        max-width: 600px;
+        margin: auto;
+        display: block;
+    }
+
+    .contact-form .input-group {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .contact-form .form-control {
+        height: 52px;
+    }
+
+    .contact-form textarea.form-control {
+        height: 196px !important;
+    }
+
+    .contact-form .sub {
+        background: #02a859;
+        padding: 14px 40px;
+        border-radius: 30px;
+        border: none;
+        font-size: 16px;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+@media only screen and (max-width:991px) {
+
+    .menu-thongtin .row {
+        display: unset;
+    }
+
+    .tin-tuc-su-kien .tin-tuc .item .image img {
+        height: 240px !important;
+    }
+
+    .tin-tuc-su-kien .tin-tuc .col-md-8 .row .col-md-6:nth-child(1) {
+        padding-right: 15px;
+    }
+
+    .tin-tuc-su-kien .tin-tuc .col-md-8 {
+        padding-right: 15px;
+    }
+
+    .tin-tuc-su-kien .tin-tuc .col-md-4 {
+        padding-left: 15px;
+    }
+
+    .tin-tuc-su-kien .tin-tuc .item {
+        margin-bottom: 30px;
+    }
+
+    .tuyen-sinh {
+        height: 100%;
+        min-height: 100%;
+    }
+
+    .tin-hoatdong .item-tintuc {
+        margin-bottom: 30px;
+    }
+
+        .tin-hoatdong .item-tintuc .image img {
+            height: 225px;
+        }
+
+    .footer .box-info {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .tuyen-sinh {
+        padding: 50px 0;
+    }
+
+    .header-top .language {
+        top: -15px;
+    }
+
+    @media only screen and (max-width:480px) {
+
+        .section-title h3 {
+            font-size: 18px;
+        }
+
+        .menu-thongtin .col-xs-4 {
+            width: 50%;
+        }
+
+        .tin-tuc-su-kien .tin-tuc .col-xs-6 {
+            width: 100%;
+        }
+
+        .tin-tuc-su-kien .tin-tuc .item .image img {
+            height: 300px !important;
+        }
+
+        .tin-hoatdong .col-xs-6 {
+            width: 100%;
+        }
+
+        .gallery .col-xs-6 {
+            width: 100%;
+        }
+
+        .gallery .item-gallery img {
+            height: 260px;
+        }
+    }
+
+    @media only screen and (max-width:400px) {
+        .tin-sinhvien .item-tintuc .image {
+            width: 100%;
+            margin-right: 0;
+            border-radius: 4px;
+            overflow: hidden;
+            float: unset;
+            margin-bottom: 10px;
+        }
+
+        .item-tintuc .image img {
+            height: 240px;
+        }
+
+        .tin-sinhvien .item-tintuc .txt {
+            width: 100%;
+            float: unset;
+        }
+    }
+
+    @media only screen and (max-width:360px) {
+        .menu-thongtin .col-xs-6 {
+            width: 100%;
+        }
+
+        .tin-hoatdong .item-tintuc .image img {
+            height: 200px;
+        }
+    }
