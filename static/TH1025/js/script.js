@@ -19,4 +19,8 @@ $(document).ready(function () {
         slideWidth: 180,
         slideMargin: 5,
     });
+
+    $('#page-gallery').lightGallery({
+        thumbnail: true
+    });
 })

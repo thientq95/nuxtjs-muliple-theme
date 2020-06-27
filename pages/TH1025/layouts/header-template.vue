@@ -39,7 +39,8 @@
           <div class="button"></div>
           <ul>
             <li class="active">
-              <nuxt-link to="/">Trang Chủ</nuxt-link>
+              <!-- <a href="/">Trang chủ</a> -->
+               <nuxt-link to="/">Trang chủ</nuxt-link>
             </li>
             <li>
               <a href="#">Giới thiệu</a>
@@ -102,10 +103,10 @@
               <a href="#">Tin hướng nghiệp</a>
             </li>
             <li>
-              <a href="#">Tin tức</a>
+              <nuxt-link to="/tin-tuc">Tinh tức</nuxt-link>
             </li>
             <li>
-              <a href="#">Tuyển sinh 2019</a>
+              <nuxt-link to="/hinh-anh">Hình ảnh</nuxt-link>
             </li>
             <li>
               <a href="#">Câu hỏi thường gặp</a>
@@ -119,7 +120,12 @@
               <img src="/TH1025/images/search.png" /> Tìm kiếm
             </a>
             <form method="post" action>
-              <input type="text" name class="input-search" placeholder="Từ khóa tìm kiếm" />
+              <input
+                type="text"
+                name
+                class="input-search"
+                placeholder="Từ khóa tìm kiếm"
+              />
               <button class="hidden">Tìm</button>
             </form>
           </div>

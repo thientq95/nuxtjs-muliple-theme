@@ -212,17 +212,30 @@ export default {
     "default-template": DefaultTemplate,
     "category-template": CategoriesTemplate
   },
-  script: [
-    { src: "/TH1025/js/jquery.min.js" },
-    { src: "/TH1025/js/jquery.bxslider.js" },
-    { src: "/TH1025/js/script.ts" }
-  ],
+  head: {
+    title: 'Liên hệ',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Liên hệ' }
+    ],
+  },
   data() {
     const { user } = api.getUserDirect();
     console.log(user);
     return {
       users: []
     };
+  },
+  mounted() {
+    $(".link-brand .slider-content").bxSlider({
+      wrapperClass: false,
+      controls: false,
+      pager: false,
+      maxSlides: 6,
+      moveSlides: 6,
+      moveSlides: 4,
+      slideWidth: 180,
+      slideMargin: 5
+    });
   },
   methods: {
     submit() {

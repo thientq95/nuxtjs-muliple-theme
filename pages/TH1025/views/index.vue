@@ -111,7 +111,14 @@ export default {
     "default-template": DefaultTemplate,
     "category-template": CategoriesTemplate
   },
+  head: {
+    title: 'Trang chủ 🚀',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Trang chủ' }
+    ],
+  },
   data() {
+    console.log(api.getCodeWeb());
     api.getTodo().then(res => {
       this.todos = res.data;
     });
@@ -119,10 +126,18 @@ export default {
     api.getUser().then(res => {
       this.users = res.data;
     });
+
     return {
       todos: [],
       users: []
     };
+  },
+  mounted() {
+    // $(".slide-show .slider-content").bxSlider({
+    //   wrapperClass: false,
+    //   controls: false,
+    //   pager: false
+    // });
   },
   asyncData() {},
   fetch() {},

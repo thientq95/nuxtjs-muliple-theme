@@ -16,16 +16,6 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-      <script>
-        var swiper = new Swiper(".slideshow .swiper-container", {
-          autoplay: true,
-          loop: true,
-          pagination: {
-            el: ".swiper-pagination",
-            dynamicBullets: true
-          }
-        })
-      </script>
     </section>
     <section class="menu-thongtin">
       <div class="container">
@@ -173,7 +163,7 @@
                     <a href="#">
                       <div class="item">
                         <div class="image">
-                          <img src="images/sk-3.png" />
+                          <img src="/TH1024/images/sk-3.png" />
                         </div>
                         <div class="txt">
                           <div class="categories">Văn hóa UDA</div>

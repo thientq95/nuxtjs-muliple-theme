@@ -1,12 +1,32 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 Vue.use(Router)
-  // call api --> returl all list domain
+// call api --> returl all list domain
 import FakeAPI from './api/fake-api';
 const api = new FakeAPI();
+
+let vm = '';
+if (process.client) {
+  const host = window.location.hostname;
+  switch (host) {
+    case 'nuxtdemo.epmt.com.vn':
+      vm = 'TH1024'
+      break;
+    case 'nuxtdemo1.epmt.com.vn':
+      vm = 'TH1025'
+      break
+    default:
+      vm = 'TH1025'
+      break
+  }
+}
+
+console.log(api.getCodeWeb());
+const ds = api.getCodeWeb();
+console.log(ds);
 const data_api = {
-    templateId: "TH1025",
-    domainName: "vnworkd01"
+  templateId: ds,
+  domainName: "vnworkd01"
 }
 
 export function createRouter(ssrContext, createDefaultRouter, routerOptions) {

@@ -77,7 +77,7 @@
 </template>
 
 <script>
-import DefaultTemplate from "../../layouts/default-template";
+import DefaultTemplate from "../layouts/default-template";
 export default {
   components: {
     "default-template": DefaultTemplate

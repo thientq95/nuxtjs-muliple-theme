@@ -27,7 +27,7 @@
               <div class="content">
                 <div class="item-tintuc">
                   <div class="image">
-                    <img src="images/tin-sinhvien-1.png" />
+                    <img src="/TH1024/images/tin-sinhvien-1.png" />
                   </div>
                   <div class="txt">
                     <a href="#">
@@ -39,7 +39,7 @@
                 </div>
                 <div class="item-tintuc">
                   <div class="image">
-                    <img src="images/tin-sinhvien-1.png" />
+                    <img src="/TH1024/images/tin-sinhvien-1.png" />
                   </div>
                   <div class="txt">
                     <a href="#">
@@ -52,7 +52,7 @@
 
                 <div class="item-tintuc">
                   <div class="image">
-                    <img src="images/tin-sinhvien-1.png" />
+                    <img src="/TH1024/images/tin-sinhvien-1.png" />
                   </div>
                   <div class="txt">
                     <a href="#">
@@ -64,7 +64,7 @@
                 </div>
                 <div class="item-tintuc">
                   <div class="image">
-                    <img src="images/tin-sinhvien-1.png" />
+                    <img src="/TH1024/images/tin-sinhvien-1.png" />
                   </div>
                   <div class="txt">
                     <a href="#">
@@ -153,7 +153,7 @@
 </template>
 
 <script>
-import DefaultTemplate from "../../layouts/default-template";
+import DefaultTemplate from "../layouts/default-template";
 export default {
   components: {
     "default-template": DefaultTemplate

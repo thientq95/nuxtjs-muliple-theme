@@ -88,7 +88,7 @@
         <a href>Hoạt động</a>
       </li>
       <li>
-        <a href>Tin tức</a>
+        <nuxt-link to="/tin-tuc">Tin tức</nuxt-link>
       </li>
       <li>
         <nuxt-link to="/lien-he">Liên hệ</nuxt-link>
